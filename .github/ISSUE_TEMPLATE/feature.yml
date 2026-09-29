@@ -1,0 +1,36 @@
+name: Новая функция
+description: Предложить проверяемое изменение MedSim
+title: "[Feature] "
+labels:
+  - "type:feature"
+body:
+  - type: textarea
+    id: value
+    attributes:
+      label: Пользовательская ценность
+      placeholder: Как студент или преподаватель, я хочу..., чтобы...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приемки
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: clinical
+    attributes:
+      label: Требуется clinical review
+      options:
+        - "Да"
+        - "Нет"
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Риски и зависимости
+    validations:
+      required: true
+

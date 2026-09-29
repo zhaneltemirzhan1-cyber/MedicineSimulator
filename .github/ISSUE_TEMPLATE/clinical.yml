@@ -1,0 +1,29 @@
+name: Клинический контент
+description: Создать или проверить медицинский учебный материал
+title: "[Clinical] "
+labels:
+  - "type:clinical-content"
+  - "clinical-review:required"
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Материал
+      description: Укажите упражнение, диагноз, симптомы или план лечения.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Источники и версия
+      description: Укажите проверяемые источники, дату или редакцию.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии проверки
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+

@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Документация проекта
+    url: https://github.com/zhaneltemirzhan1-cyber/MedicineSimulator/tree/main/docs
+    about: Проверьте ADR и правила проекта перед созданием задачи.
+

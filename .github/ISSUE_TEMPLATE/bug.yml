@@ -1,0 +1,33 @@
+name: Дефект
+description: Зафиксировать воспроизводимую ошибку
+title: "[Bug] "
+labels:
+  - "type:bug"
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Окружение
+      placeholder: Браузер, ОС, версия приложения
+    validations:
+      required: true
+
